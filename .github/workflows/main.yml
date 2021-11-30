@@ -31,14 +31,11 @@ jobs:
         # Yarn command
         cmd: install # npm install/ yarn install
     
-    - name: Creating build
-      run: yarn build
-    
     - name: installing surge  
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build allwees-app.surge.sh --token ${{secrets.SURGE-TOKEN}}
+      run: surge allwees-app.surge.sh --token ${{secrets.SURGE-TOKEN}}
         echo Add other actions to build,
         echo test, and deploy your project.
         echo test, and deploy your project
