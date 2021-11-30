@@ -9,6 +9,8 @@
 }
 div.scrollmenu {
   /* background-color: #333; */
+  display: flex;
+  align-items: center;
   overflow: auto;
   white-space: nowrap;
 }
